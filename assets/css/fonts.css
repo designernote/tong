@@ -1,70 +1,45 @@
+/* Pretendard */
 @font-face {
-  font-family: "s-core-dream-thin";
-  src: url("../fonts/S-Core1.woff") format("woff2"),
-    url("../fonts/S-Core1.woff") format("woff");
+  font-family: "Pretendard";
+  font-style: normal;
   font-weight: 100;
-  font-style: normal;
+  font-display: swap;
+  src: local(Pretendard-Thin);
+  src: url(../fonts/Pretendard-Thin.woff2) format(woff2),
+    url(../fonts/Pretendard-Thin.woff) format(woff),
+    url(../fonts/Pretendard-Thin.ttf) format(truetype);
+  /* unicode-range:U+0030-0039; */
 }
 @font-face {
-  font-family: "s-core-dream-extralight";
-  src: url("../fonts/S-Core2.woff") format("woff2"),
-    url("../fonts/S-Core2.woff") format("woff");
-  font-weight: 200;
+  font-family: "Pretendard";
   font-style: normal;
-}
-@font-face {
-  font-family: "s-core-dream-light";
-  src: url("../fonts/S-Core3.woff") format("woff2"),
-    url("../fonts/S-Core3.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "s-core-dream-regular";
-  src: url("../fonts/S-Core4.woff") format("woff2"),
-    url("../fonts/S-Core4.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
+  font-display: swap;
+  src: local(Pretendard-Regular);
+  src: url(../fonts/Pretendard-Regular.woff2) format(woff2),
+    url(../fonts/Pretendard-Regular.woff) format(woff),
+    url(../fonts/Pretendard-Regular.ttf) format(truetype);
+  /* unicode-range:U+0030-0039; */
 }
 @font-face {
-  font-family: "s-core-dream-medium";
-  src: url("../fonts/S-Core5.woff") format("woff2"),
-    url("../fonts/S-Core5.woff") format("woff");
+  font-family: "Pretendard";
+  font-style: normal;
   font-weight: 500;
-  font-style: normal;
+  font-display: swap;
+  src: local(Pretendard-Medium);
+  src: url(../fonts/pretendard/Pretendard-Medium.woff2) format(woff2),
+    url(../fonts/pretendard/Pretendard-Medium.woff) format(woff),
+    url(../fonts/pretendard/Pretendard-Medium.ttf) format(truetype);
+  /* unicode-range:U+0030-0039; */
 }
 @font-face {
-  font-family: "s-core-dream-bold";
-  src: url("../fonts/S-Core6.woff") format("woff2"),
-    url("../fonts/S-Core6.woff") format("woff");
+  font-family: "Pretendard";
+  font-style: normal;
   font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "s-core-dream-extrabold";
-  src: url("../fonts/S-Core7.woff") format("woff2"),
-    url("../fonts/S-Core7.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "s-core-dream-heavy";
-  src: url("../fonts/S-Core8.woff") format("woff2"),
-    url("../fonts/S-Core8.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "s-core-dream-black";
-  src: url("../fonts/S-Core9.woff") format("woff2"),
-    url("../fonts/S-Core9.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GoryeongStrawberry";
-  src: url("../fonts/GoryeongStrawberry.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
+  font-display: swap;
+  src: local(Pretendard-Bold);
+  src: url(../fonts/pretendard/Pretendard-Bold.woff2) format(woff2),
+    url(../fonts/pretendard/Pretendard-Bold.woff) format(woff),
+    url(../fonts/pretendard/Pretendard-Bold.ttf) format(truetype);
+  /* unicode-range:U+0030-0039; */
+} /*# sourceMappingURL=fonts.css.map */

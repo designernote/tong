@@ -1,40 +1,22 @@
-      <footer class="footer">
-        <div class="contents">
-          <div class="cs_center">
-            <div class="btn_area">
-              <a href="" class="btn_cs">고객센터</a>
-              <a href="" class="btn_pro">전문가 센터</a>
-            </div>
-            <div class="time">
-              10:30~18:00 (점심시간 13:00~14:00)<br />주말, 공휴일 휴무
-            </div>
-          </div>
-          <div class="menu">
-            <ul>
-              <li>
-                <strong><a href="">크몽</a></strong>
-                <a href="">크몽 메인</a>
-                <a href="">Prime</a>
-              </li>
-              <li>
-                <strong><a href="">크몽</a></strong>
-                <a href="">크몽 메인</a>
-                <a href="">Prime</a>
-              </li>
-              <li>
-                <strong><a href="">크몽</a></strong>
-                <a href="">크몽 메인</a>
-                <a href="">Prime</a>
-              </li>
-              <li>
-                <strong><a href="">크몽</a></strong>
-                <a href="">크몽 메인</a>
-                <a href="">Prime</a>
-              </li>
-            </ul>
-            <div class="app_area"></div>
-          </div>
-        </div>
+      <footer>
+        <ul class="tab_menu">
+          <li>
+            <div class="menu Icon_1"></div>
+            <span>내아파통</span>
+          </li>
+          <li>
+            <div class="menu Icon_2 on"></div>
+            <span>지도</span>
+          </li>
+          <li>
+            <div class="menu Icon_3"></div>
+            <span>카테고리</span>
+          </li>
+          <li>
+            <div class="menu Icon_4"></div>
+            <span>마이</span>
+          </li>
+        </ul>
       </footer>
     </section>
     <script
