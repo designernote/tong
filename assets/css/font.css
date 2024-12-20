@@ -1,0 +1,37 @@
+/* Pretendard */
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local(Pretendard-Thin);
+  src: url(../fonts/Pretendard-Thin.woff2) format(woff2), url(../fonts/Pretendard-Thin.woff) format(woff), url(../fonts/Pretendard-Thin.ttf) format(truetype);
+  /* unicode-range:U+0030-0039; */
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(Pretendard-Regular);
+  src: url(../fonts/Pretendard-Regular.woff2) format(woff2), url(../fonts/Pretendard-Regular.woff) format(woff), url(../fonts/Pretendard-Regular.ttf) format(truetype);
+  /* unicode-range:U+0030-0039; */
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(Pretendard-Medium);
+  src: url(../fonts/pretendard/Pretendard-Medium.woff2) format(woff2), url(../fonts/pretendard/Pretendard-Medium.woff) format(woff), url(../fonts/pretendard/Pretendard-Medium.ttf) format(truetype);
+  /* unicode-range:U+0030-0039; */
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local(Pretendard-Bold);
+  src: url(../fonts/pretendard/Pretendard-Bold.woff2) format(woff2), url(../fonts/pretendard/Pretendard-Bold.woff) format(woff), url(../fonts/pretendard/Pretendard-Bold.ttf) format(truetype);
+  /* unicode-range:U+0030-0039; */
+}/*# sourceMappingURL=font.css.map */

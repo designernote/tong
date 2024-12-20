@@ -10,7 +10,11 @@
   /* 1024 기준 px (721 ~ 1440) */
 
   :root {
-    font-size: 12px;
+    font-size: 62.5%;
+  }
+
+  html {
+    font-size: 1.4rem;
   }
 
   header {
@@ -169,8 +173,8 @@ header {
   max-width: 1280px;
   margin: 0 auto;
   height: 6.25rem;
-  background-color: #fff;
-  background: hsl(255 100 100 / 0.15);
+  // background-color: #fff;
+  // background: hsl(255 100 100 / 0.15);
   /* border-block-end: 1px solid hsl(255 0 0 / 0.25); */
   inset-block-start: 0;
   backdrop-filter: blur(2rem);
@@ -179,37 +183,42 @@ header {
 
   .logo {
     > a {
+      display: block;
       font-size: 0;
       color: transparent;
-      width: 7.0625rem;
+      width: 2.6875rem;
       height: 2rem;
-      background: url("../images/logo.svg") no-repeat center/contain;
-      display: block;
+      background: url(../images/h_logo.svg) no-repeat center / contain;
     }
   }
 
-  .top_menu {
-    display: flex;
-    align-items: center;
-    gap: 2.8125rem;
-
-    > a {
-      font-size: 1.5rem;
-      height: 3.4375rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .btn_develop {
-      padding: 0 1.0625rem;
-      background: var(--primary-c-y);
-      border-radius: 0.625rem;
-      position: relative;
-    }
-    .btn_login {
-    }
+  .page_title {
+    font-size: 1.6rem;
+    color: red;
   }
+
+  // .top_menu {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 2.8125rem;
+
+  //   > a {
+  //     font-size: 1.5rem;
+  //     height: 3.4375rem;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //   }
+
+  //   .btn_develop {
+  //     padding: 0 1.0625rem;
+  //     background: var(--primary-c-y);
+  //     border-radius: 0.625rem;
+  //     position: relative;
+  //   }
+  //   .btn_login {
+  //   }
+  // }
 }
 .wrap {
   position: relative;

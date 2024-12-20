@@ -14,9 +14,7 @@
   <body>
     <section class="wrap">
       <header class="header">
-        <h1 class="logo"><a href="index.html">마켓셀러</a></h1>
-        <div class="top_menu">
-          <a href="#" class="btn_develop ripple">개발자 등록</a>
-          <a href="#" class="btn_login">로그인</a>
-        </div>
+        <h1 class="logo"><a href="index.html">logo</a></h1>
+        <h2 class="page_title">서울센트럴파크케슬</h2>
+        <a href="#" class="top_menu">메뉴</a>
       </header>

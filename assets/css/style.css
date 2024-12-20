@@ -9,7 +9,10 @@
 @media screen and (max-width: 1440px) {
   /* 1024 기준 px (721 ~ 1440) */
   :root {
-    font-size: 12px;
+    font-size: 62.5%;
+  }
+  html {
+    font-size: 1.4rem;
   }
   header {
     padding: 0 1rem;
@@ -149,8 +152,6 @@ header {
   max-width: 1280px;
   margin: 0 auto;
   height: 6.25rem;
-  background-color: #fff;
-  background: hsla(255, 100%, 100%, 0.15);
   /* border-block-end: 1px solid hsl(255 0 0 / 0.25); */
   inset-block-start: 0;
   -webkit-backdrop-filter: blur(2rem);
@@ -159,31 +160,18 @@ header {
   z-index: 10;
 }
 header .logo > a {
+  display: block;
   font-size: 0;
   color: transparent;
-  width: 7.0625rem;
+  width: 2.6875rem;
   height: 2rem;
-  background: url("../images/logo.svg") no-repeat center/contain;
-  display: block;
+  background: url(../images/h_logo.svg) no-repeat center/contain;
 }
-header .top_menu {
-  display: flex;
-  align-items: center;
-  gap: 2.8125rem;
+header .page_title {
+  font-size: 1.6rem;
+  color: red;
 }
-header .top_menu > a {
-  font-size: 1.5rem;
-  height: 3.4375rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .top_menu .btn_develop {
-  padding: 0 1.0625rem;
-  background: var(--primary-c-y);
-  border-radius: 0.625rem;
-  position: relative;
-}
+
 .wrap {
   position: relative;
   display: flex;
