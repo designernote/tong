@@ -317,7 +317,7 @@ header .top_menu {
   max-width: 18.75rem;
 }
 .wrap footer {
-  border-top: 1px solid var(--footer-line);
+  border-top: 1px solid var(--line);
 }
 .wrap footer .tab_menu {
   display: flex;
