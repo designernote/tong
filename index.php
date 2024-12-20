@@ -6,7 +6,43 @@ include 'include/header.php';
 ?>
       <main class="main" role="main">
         <div class="container">
-          <section class="visual_banner">
+          <section>
+            <input type="text" />
+            <div class="visual_banner">
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/img_visual.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption banner_text">
+                      <h5>우리백화점 잠실점</h5>
+                      <p>입주자 대상 가전제품 20% 할인</p>
+                      <span>행사기간 : 2024.02.02~05.01</span>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/img_visual.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption banner_text">
+                      <h5>꺽이 백화점 이문동</h5>
+                      <p>입주자 대상 가전제품 20% 할인</p>
+                      <span>행사기간 : 2024.02.02~05.01</span>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/img_visual.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption banner_text">
+                      <h5>구라댕 백화점 공릉동</h5>
+                      <p>입주자 대상 가전제품 20% 할인</p>
+                      <span>행사기간 : 2024.02.02~05.01</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bar_banner">
+              다신사현대카드&nbsp;<strong>최대 4만원 즉시할인</strong>
+            </div>
+          </section>
+          <!-- <section class="visual_banner">
             <img
               alt="5번째 배너 이미지"
               src="https://d2v80xjmx68n4w.cloudfront.net/assets/images/curated_contents/3644daa0-3e83-41ca-8361-27a9ad4fd504.png?w=700"
@@ -14,7 +50,7 @@ include 'include/header.php';
               height="258"
               loading="lazy"
             />
-          </section>
+          </section> -->
           <section class="branch">
             <div class="menu">
               <ul>
