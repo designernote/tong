@@ -74,28 +74,63 @@ header .top_menu {
   height: 100%;
 }
 .wrap main {
-  margin-top: 6.875rem;
+  margin-top: 4.8rem;
 }
 .wrap main .container {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 1.6rem;
 }
-.wrap main .container .visual_banner {
-  height: 16.125rem;
-  border-radius: 0.625rem;
-  background-color: #d9d9d9;
+.wrap main .container section .visual_banner {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 -1.6rem;
+  height: 20.4rem;
+  background-color: #d9d9d9;
   overflow: hidden;
-  position: relative;
 }
-.wrap main .container .visual_banner > img {
+.wrap main .container section .visual_banner > img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
+}
+.wrap main .container section .visual_banner .banner_text {
+  left: 2rem;
+  padding: 0;
+  font-weight: 600;
+  text-align: initial;
+}
+.wrap main .container section .visual_banner .banner_text h5 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--white);
+  line-height: initial;
+  letter-spacing: -1;
+}
+.wrap main .container section .visual_banner .banner_text p {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.wrap main .container section .visual_banner .banner_text p + span {
+  font-size: 1.2rem;
+}
+.wrap main .container section .bar_banner {
+  display: flex;
+  margin: 0 -1.6rem;
+  padding: 1.4rem 1.6rem;
+  color: var(--white);
+  background: var(--black);
+}
+.wrap main .container section .bar_banner::after {
+  content: "";
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../images/icon_chevron_right.svg) no-repeat center/contain;
 }
 .wrap main .container .branch > .menu {
   margin-top: 3.625rem;
@@ -343,4 +378,8 @@ header .top_menu {
 }
 .wrap footer .tab_menu > li .menu.on + span {
   color: var(--text-tab1);
+}
+
+global .carousel-caption {
+  border: 1px solid red;
 }/*# sourceMappingURL=style.css.map */
