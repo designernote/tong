@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("fonts.css");
+@import url('fonts.css');
 :root {
   font-size: 62.5%;
   --primary-Y: #ff9700;
@@ -8,12 +8,13 @@
   --text-1: #17191a;
   --text-2: #464a4d;
   --text-3: #757b80;
-  --text-4: #7e7e7e;
+  --text-4: #bbc5cc;
   --text-tab1: #3e4e50;
   --text-tab2: #bdc3c7;
   --gray999: #999;
   --text-red: #ff0000;
   --line: #e8eef2;
+  --bg-color-2: #f2f8fc;
 
   --primary-c-y: #f5d590;
   --primary-c-b: #000;
@@ -101,9 +102,9 @@ html,
 body {
   position: relative;
   height: 100%;
-  font-family: "Pretendard", Sans-serif;
+  font-family: 'Pretendard', Sans-serif;
   word-break: break-all;
-  color: var(--Neutral-900, #111);
+  color: var(--text-1);
   background-color: #fff;
   font-size: 1.4rem;
 }
@@ -324,20 +325,20 @@ input::-webkit-search-results-decoration {
   display: none;
 }
 
-input input[type="date"]::-webkit-inner-spin-button {
+input input[type='date']::-webkit-inner-spin-button {
   display: none;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-calendar-picker-indicator {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-input[type="number"] {
+input[type='number'] {
   -moz-appearance: textform;
 }
 
-input[type="checkbox"]:focus {
+input[type='checkbox']:focus {
   outline: none;
 }
 
@@ -353,7 +354,7 @@ option {
   color: var(--fc_01, #000);
 }
 
-option[value=""][disabled] {
+option[value=''][disabled] {
   display: none;
 }
 
@@ -733,32 +734,32 @@ h5 {
   margin-top: -4.8rem !important;
 }
 
-[class^="hgroup"] {
+[class^='hgroup'] {
   display: table;
   position: relative;
   width: 100%;
 }
 
-[class^="hgroup"] > div {
+[class^='hgroup'] > div {
   display: table-cell;
   vertical-align: middle;
 }
 
-[class^="hgroup"] > div:nth-child(2) {
+[class^='hgroup'] > div:nth-child(2) {
   text-align: right;
 }
 
-[class^="hgroup"] .h2,
-[class^="hgroup"] .h3 {
+[class^='hgroup'] .h2,
+[class^='hgroup'] .h3 {
   display: inline-block;
   margin: 0;
 }
 
-[class^="hgroup"] + .acc_list {
+[class^='hgroup'] + .acc_list {
   margin-top: 0.8rem;
 }
 
-[class^="hgroup"] > div .badge {
+[class^='hgroup'] > div .badge {
   margin: 3.2rem 0 1rem;
 }
 
@@ -788,7 +789,7 @@ h5 {
 }
 
 /******************** [기획전전용] ********************/
-.blind_ir {
+/* .blind_ir {
   position: absolute;
   width: 1px;
   height: 1px !important;
@@ -797,4 +798,38 @@ h5 {
   border: none;
   clip: rect(0 0 0 0);
   overflow: hidden;
+} */
+
+/* input */
+input {
+  appearance: none;
+  border: none;
+  background: transparent;
+}
+
+.input_wrap {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  font-size: 1.6rem;
+  border-radius: 1.2rem;
+
+  &.search {
+    margin: 0.8rem -0.8rem;
+    background: var(--bg-color-2);
+    &::before {
+      content: '';
+      margin: 0 0.8rem 0 0.8rem;
+      width: 2.4rem;
+      height: 2.4rem;
+      background: url(../images/icon_search.svg) no-repeat center / contain;
+    }
+    > input[type='text'] {
+      width: calc(100% - 4.8rem);
+
+      &::placeholder {
+        color: var(--text-4);
+      }
+    }
+  }
 }

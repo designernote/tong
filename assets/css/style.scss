@@ -1,4 +1,4 @@
-@import url("common.css");
+@import url('common.css');
 
 @for $i from 1 through 4 {
   .Icon_#{$i} {
@@ -76,7 +76,7 @@ header {
           align-items: center;
           margin: 0 -1.6rem;
           // width: 39rem;
-          height: 20.4rem;
+          // height: 20.4rem;
           background-color: #d9d9d9;
           overflow: hidden;
 
@@ -114,13 +114,14 @@ header {
 
         .bar_banner {
           display: flex;
+          justify-content: space-between;
           margin: 0 -1.6rem;
           padding: 1.4rem 1.6rem;
           color: var(--white);
           background: var(--black);
 
           &::after {
-            content: "";
+            content: '';
             display: inline-block;
             width: 2.4rem;
             height: 2.4rem;
@@ -151,7 +152,7 @@ header {
                 display: block;
                 font-size: 2rem;
                 font-weight: 400;
-                font-family: "GoryeongStrawberry";
+                font-family: 'GoryeongStrawberry';
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -282,7 +283,7 @@ header {
                       height: 1.375rem;
                       display: block;
                       margin-right: 0.5rem;
-                      background: url("../images/icon_crown.svg") no-repeat
+                      background: url('../images/icon_crown.svg') no-repeat
                         center/contain;
                     }
                   }
@@ -311,7 +312,7 @@ header {
           h2 {
             font-size: 2.5rem;
             font-weight: bold;
-            font-family: "s-core-dream-bold";
+            font-family: 's-core-dream-bold';
           }
 
           .contents {

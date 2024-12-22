@@ -7,7 +7,9 @@ include 'include/header.php';
       <main class="main" role="main">
         <div class="container">
           <section>
-            <input type="text" />
+            <div class="input_wrap search">
+              <input type="text" placeholder="홍길동님, 인테리어 업체 찾으세요?"/>
+            </div>
             <div class="visual_banner">
               <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -39,7 +41,7 @@ include 'include/header.php';
               </div>
             </div>
             <div class="bar_banner">
-              다신사현대카드&nbsp;<strong>최대 4만원 즉시할인</strong>
+              <p>다신사현대카드&nbsp;<strong>최대 4만원 즉시할인</strong></p>
             </div>
           </section>
           <!-- <section class="visual_banner">
