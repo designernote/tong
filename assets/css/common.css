@@ -8,12 +8,15 @@
   --text-1: #17191a;
   --text-2: #464a4d;
   --text-3: #757b80;
-  --text-4: #7e7e7e;
+  --text-4: #bbc5cc;
   --text-tab1: #3e4e50;
   --text-tab2: #bdc3c7;
   --gray999: #999;
   --text-red: #ff0000;
   --line: #e8eef2;
+  --line1: #7e7e7e;
+  --line2: rgb(0 0 0 / 5%);
+  --bg-color-2: #f2f8fc;
 
   --primary-c-y: #f5d590;
   --primary-c-b: #000;
@@ -100,10 +103,11 @@ html {
 html,
 body {
   position: relative;
+  display: flex;
   height: 100%;
   font-family: "Pretendard", Sans-serif;
   word-break: break-all;
-  color: var(--Neutral-900, #111);
+  color: var(--text-1);
   background-color: #fff;
   font-size: 1.4rem;
 }
@@ -788,7 +792,7 @@ h5 {
 }
 
 /******************** [기획전전용] ********************/
-.blind_ir {
+/* .blind_ir {
   position: absolute;
   width: 1px;
   height: 1px !important;
@@ -797,4 +801,38 @@ h5 {
   border: none;
   clip: rect(0 0 0 0);
   overflow: hidden;
+} */
+
+/* input */
+input {
+  appearance: none;
+  border: none;
+  background: transparent;
+}
+
+.input_wrap {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  font-size: 1.6rem;
+  border-radius: 1.2rem;
+
+  &.search {
+    margin: 0.8rem -0.8rem;
+    background: var(--bg-color-2);
+    &::before {
+      content: "";
+      margin: 0 0.8rem 0 0.8rem;
+      width: 2.4rem;
+      height: 2.4rem;
+      background: url(../images/icon_search.svg) no-repeat center / contain;
+    }
+    > input[type="text"] {
+      width: calc(100% - 4.8rem);
+
+      &::placeholder {
+        color: var(--text-4);
+      }
+    }
+  }
 }
