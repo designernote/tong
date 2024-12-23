@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/swiper.css" rel="stylesheet" type="text/css" />
-    <style>
-    
-  </style>
   </head>
 
   <body>
@@ -22,5 +19,17 @@
       <header class="header">
         <h1 class="logo"><a href="index.html">logo</a></h1>
         <h2 class="page_title">서울센트럴파크케슬</h2>
-        <a href="#" class="top_menu">메뉴</a>
+
+        <a class="btn_sideMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        
+        <div class="gnb">
+          sdlkfjsdsdlkfj
+        </div>
+        <div class="sideMenu">
+        </div>
       </header>
+      
