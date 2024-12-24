@@ -1,19 +1,22 @@
 $(document).ready(function () {
   // 사이드메뉴 펼치기기
-  $(".btn_sideMenu").on("click", function () {
-    $(".sideMenu").toggleClass("open");
-    $(".gnb").toggleClass("open");
+  $(".btn_sideMenu").click(function () {
+    $(".sideMenu").addClass("open");
+    $(".gnb_bg").fadeIn(750);
   });
 
-  // 햄버거메뉴 애니메이션션
-  var burger = $(".btn_sideMenu");
+  $(".side_close").click(function () {
+    $(".sideMenu").addClass("out").removeClass("open");
+    $(".gnb_bg").fadeOut(750);
+  });
 
-  burger.each(function (index) {
-    var $this = $(this);
+  // 하단 탭 네비게이션
+  $(".menu").click(function (e) {
+    e.preventDefault();
 
-    $this.on("click", function (e) {
-      e.preventDefault();
-      $(this).toggleClass("active-" + (index + 1));
-    });
+    let tabMenu = $(this);
+
+    $(".menu").removeClass("on");
+    $(this).addClass("on");
   });
 });

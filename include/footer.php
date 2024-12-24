@@ -1,20 +1,25 @@
       <footer>
         <ul class="tab_menu">
           <li>
-            <div class="menu Icon_1"></div>
-            <span>내아파통</span>
+            <div class="menu Icon_1">
+              <span>내아파통</span>
+            </div>            
           </li>
           <li>
-            <div class="menu Icon_2 on"></div>
-            <span>지도</span>
+            <div class="menu on Icon_2 ">
+              <span>지도</span>
+            </div>
           </li>
           <li>
-            <div class="menu Icon_3"></div>
-            <span>카테고리</span>
+            <div class="menu Icon_3">
+              <span>카테고리</span>
+            </div>
           </li>
           <li>
-            <div class="menu Icon_4"></div>
-            <span>마이</span>
+            <div class="menu Icon_4">
+              <span>마이</span>
+            </div>
+            
           </li>
         </ul>
       </footer>
