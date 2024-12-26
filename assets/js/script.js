@@ -12,6 +12,12 @@ $(document).ready(function () {
     $("body").css("overflow", "initial");
   });
 
+  $(".gnb_bg").click(function (e) {
+    $(".sideMenu").addClass("out").removeClass("open");
+    $(".gnb_bg").fadeOut(750);
+    e.preventDefault();
+  });
+
   // 하단 탭 네비게이션
   $(".menu").click(function (e) {
     e.preventDefault();
