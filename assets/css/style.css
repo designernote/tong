@@ -491,11 +491,27 @@
 }
 .wrap main .container section .detail_view .img_container {
   margin: 0 -1.6rem;
-  height: 19.4rem;
   border: 1px solid red;
 }
 .wrap main .container section .detail_view .img_container .thum_img3 {
   width: 100%;
+  max-width: 102.4rem;
+  min-width: 39rem;
+}
+.wrap main .container section .detail_view > p {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--text-1);
+}
+.wrap main .container section .detail_view > p > small {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-3);
+}
+.wrap main .container section .detail_view > p + span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-2);
 }
 .wrap footer {
   position: fixed;
@@ -508,7 +524,7 @@
 .wrap footer .tab_menu {
   display: flex;
   width: 100%;
-  height: 6rem;
+  height: 8.3rem;
 }
 .wrap footer .tab_menu > li {
   display: flex;

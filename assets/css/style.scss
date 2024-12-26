@@ -487,11 +487,30 @@
         .detail_view {
           .img_container {
             margin: 0 -1.6rem;
-            height: 19.4rem;
             border: 1px solid red;
             .thum_img3 {
               width: 100%;
+              max-width: 102.4rem;
+              min-width: 39rem;
               // height: 19.4rem;
+            }
+          }
+          > p {
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: var(--text-1);
+
+            > small {
+              font-size: 1.6rem;
+              font-weight: 600;
+              color: var(--text-3);
+            }
+            + span {
+              font-size: 1.2rem;
+              font-weight: 600;
+              color: var(--text-2);
+              > em {
+              }
             }
           }
         }
@@ -509,7 +528,7 @@
     .tab_menu {
       display: flex;
       width: 100%;
-      height: 6rem;
+      height: 8.3rem;
 
       > li {
         display: flex;
