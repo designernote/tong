@@ -1,6 +1,6 @@
 <html lang="ko">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover', minimum-scale=1, maximum-scale=1" />
     <title></title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -44,6 +44,42 @@
             </ol>
           </li>
           <li class="on">
+            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <ol class="inner_txt">
+              <li>구로 힐스테이트 포레나</li>
+              <li>서울시 구로구 동원로 2길 32</li>
+              <li>사전 점검일 : 2024.02.02</li>
+              <li>입주 예정일 : 2024.05.02</li>
+            </ol>
+          </li>
+          <li>
+            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <ol class="inner_txt">
+              <li>구로 힐스테이트 포레나</li>
+              <li>서울시 구로구 동원로 2길 32</li>
+              <li>사전 점검일 : 2024.02.02</li>
+              <li>입주 예정일 : 2024.05.02</li>
+            </ol>
+          </li>
+          <li>
+            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <ol class="inner_txt">
+              <li>구로 힐스테이트 포레나</li>
+              <li>서울시 구로구 동원로 2길 32</li>
+              <li>사전 점검일 : 2024.02.02</li>
+              <li>입주 예정일 : 2024.05.02</li>
+            </ol>
+          </li>
+          <li>
+            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <ol class="inner_txt">
+              <li>구로 힐스테이트 포레나</li>
+              <li>서울시 구로구 동원로 2길 32</li>
+              <li>사전 점검일 : 2024.02.02</li>
+              <li>입주 예정일 : 2024.05.02</li>
+            </ol>
+          </li>
+          <li>
             <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
             <ol class="inner_txt">
               <li>구로 힐스테이트 포레나</li>
