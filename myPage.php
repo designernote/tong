@@ -26,11 +26,15 @@
           <section>
             <div class="login_induce">
               <p>회원 가입하여 더 많은 혜택을 누려보세요</p>
-              <button>로그인 및 회원가입</button>
+              <button class="button">로그인 및 회원가입</button>
             </div>
             <div class="bar"></div>
-            <ul>
-              <li></li>
+            <ul class="my_list">
+              <li>이벤트</li>
+              <li>공지사항</li>
+              <li>고객센터</li>
+              <li>자주 묻는 질문</li>
+              <li>문의하기</li>
             </ul>
 
           </section>
