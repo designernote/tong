@@ -3,11 +3,13 @@ $(document).ready(function () {
   $(".btn_sideMenu").click(function () {
     $(".sideMenu").addClass("open");
     $(".gnb_bg").fadeIn(750);
+    $("body").css("overflow", "hidden");
   });
 
   $(".side_close").click(function () {
     $(".sideMenu").addClass("out").removeClass("open");
     $(".gnb_bg").fadeOut(750);
+    $("body").css("overflow", "initial");
   });
 
   // 하단 탭 네비게이션
