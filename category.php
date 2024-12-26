@@ -16,112 +16,50 @@
 
   <body>
     <section class="wrap">
-      <header class="header">
-        <h1 class="back"><a href="index.html">back</a></h1>
-        <h2 class="page_title">부동산</h2>
-        <!-- <a href="#" class="btn_sideMenu">메뉴</a> -->
-      </header>
-      <main role="main">
+      <!-- header NO -->
+      <main role="main" class="category_page">
         <div class="container">
-          <section class="item_list">
-            <div class="item">
-              <div class="title">
-                <p>프리미엄</p>
-                <span>모두 보기</span>
-              </div>
-              <ul class="ranking_list">
-                <li>
-                  <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
-                    <div class="inner_txt">
-                      <p>부동산 / 금나와라부동산</p>
-                      <small>서울시 동작구 양녕로 220, 상가 103호</small>
-                      <span>이사지원금 (20만원상당)외 1건</span>
-                    </div>
-                  </div>
-                  <div class="average">
-                    <span>8.2</span>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
-                    <div class="inner_txt">
-                      <p>부동산 / 금나와라부동산</p>
-                      <small>서울시 동작구 양녕로 220, 상가 103호</small>
-                      <span>이사지원금 (20만원상당)외 1건</span>
-                    </div>
-                  </div>
-                  <div class="average">
-                    <span>8.2</span>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
-                    <div class="inner_txt">
-                      <p>부동산 / 금나와라부동산</p>
-                      <small>서울시 동작구 양녕로 220, 상가 103호</small>
-                      <span>이사지원금 (20만원상당)외 1건</span>
-                    </div>
-                  </div>
-                  <div class="average">
-                    <span>8.2</span>
-                  </div>
-                </li>
-              </ul>
+          <section>
+            <div class="title">
+              <p>업종별 분류</p>
             </div>
-            <div class="item">
-              <div class="capsule">
-                <button class="on">전체</button>
-                <button>검색순</button>
-                <button>AI 혜택순</button>
-              </div>
-              <div class="title">
-                <p>AI 혜택순위</p>
-                <span>모두 보기</span>
-              </div>
-              <ul class="ranking_list">
-                <li>
-                  <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
-                    <div class="inner_txt">
-                      <p>부동산 / 금나와라부동산</p>
-                      <small>서울시 동작구 양녕로 220, 상가 103호</small>
-                      <span>이사지원금 (20만원상당)외 1건</span>
-                    </div>
-                  </div>
-                  <div class="average">
-                    <span>8.2</span>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
-                    <div class="inner_txt">
-                      <p>부동산 / 금나와라부동산</p>
-                      <small>서울시 동작구 양녕로 220, 상가 103호</small>
-                      <span>이사지원금 (20만원상당)외 1건</span>
-                    </div>
-                  </div>
-                  <div class="average">
-                    <span>8.2</span>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
-                    <div class="inner_txt">
-                      <p>부동산 / 금나와라부동산</p>
-                      <small>서울시 동작구 양녕로 220, 상가 103호</small>
-                      <span>이사지원금 (20만원상당)외 1건</span>
-                    </div>
-                  </div>
-                  <div class="average">
-                    <span>8.2</span>
-                  </div>
-                </li>
-              </ul>
+            <ul class="category">
+              <li>
+                <button class="business_1">부동산</button>
+              </li>
+              <li>
+                <button class="business_2">가구</button>
+              </li>
+              <li>
+                <button class="business_3">가전</button>
+              </li>
+              <li>
+                <button class="business_4">커튼</button>
+              </li>
+              <li>
+                <button class="business_5">IOT</button>
+              </li>
+              <li>
+                <button class="business_6">이사</button>
+              </li>
+              <li>
+                <button class="business_7">줄눈</button>
+              </li>
+              <li>
+                <button class="business_8">인테리어</button>
+              </li>
+              <li>
+                <button class="business_9">청소</button>
+              </li>
+              <li>
+                <button class="business_10">기타</button>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="title">
+              <p>입주 꿀팁</p>
+              <span class="arrow">더보기</span>
             </div>
           </section>
         </div>

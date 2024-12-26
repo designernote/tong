@@ -31,11 +31,37 @@
               <p>금나와라공인중계사<small>부동산</small></p>
               <span>AI혜택 점수 <em>4.8</em></span>
             </div>
-            <ul>
-              <li>
-                전화
-              </li>
+            <ul class="user_act">
+              <li>전화</li>
+              <li>찜하기</li>
+              <li>공유</li>
             </ul>
+            <div class="bar"></div>
+            <div class="place_info">
+              <ul>
+                <li>
+                  경기 성남시 분당구 판교역로 192번길 14-2 골드타워 2층 도원참치
+                  <!-- <span>판교역 1번 출구에서 325m</span> -->
+                </li>
+                <li>p영업시작 오전 10:00 ~ 오후 7:00</li>
+                <li>031-000-0000</li>
+                <li>https://www.dowontuna.com/</li>
+              </ul>
+            </div>
+            <div class="bar"></div>
+            <div class="benefit">
+              <div class="title"><p>혜택</p></div>
+              <form >
+                <label for="benefit1">혜택1</label>
+                <div class="input_wrap benefit_txt">
+                  <input type="text" name="benefit1" id="" placeholder="이사지원금 최대 50만원 지원">
+                </div>
+                <label for="benefit2">혜택2</label>
+                <div class="input_wrap benefit_txt">
+                  <input type="text" name="benefit2" id="" placeholder="집들이 화장지 1세트 증정">
+                </div>
+              </form>
+            </div>
           </section>
         </div>
       </main>
