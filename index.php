@@ -87,7 +87,7 @@ include 'include/header.php';
               </div>
               <ul class="tip_list">
                 <li>
-                  <a href="#">이사 및 입주시 체크포인트</a>
+                  <a href="#" class="ellipsis">이사 및 입주시 체크포인트</a>
                 </li>
                 <li>
                   <a href="#">신규 입주아파트 체크리스트</a>
