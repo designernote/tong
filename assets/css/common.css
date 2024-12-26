@@ -113,6 +113,10 @@ body {
   font-size: 1.4rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* body.modal-open {
   &::-webkit-scrollbar {
     visibility: hidden;
