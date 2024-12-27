@@ -36,6 +36,36 @@
   }
 }
 
+#toggle_slider {
+  display: none;
+  &:checked + label {
+    background-color: var(--primary-Y);
+    &::after {
+      left: 2.2rem;
+    }
+  }
+  + label {
+    cursor: pointer;
+    width: 5rem;
+    height: 3rem;
+    text-indent: -9999em;
+    background-color: var(--gray999);
+    border-radius: 25px;
+    position: relative;
+    transition: 0.4s ease-in-out;
+    &::after {
+      content: "";
+      width: 2.6rem;
+      height: 2.6rem;
+      background-color: #fff;
+      position: absolute;
+      border-radius: 50%;
+      top: 0.2rem;
+      left: 0.2rem;
+      transition: 0.4s ease-in-out;
+    }
+  }
+}
 .capsule {
   padding: 5px;
   > button {
@@ -153,6 +183,31 @@
     .btn_setting {
       @extend .btn_sideMenu;
       background: url(../images/icon_setting.svg) no-repeat center / 2.4rem;
+    }
+
+    &.profile {
+      height: 6.8rem;
+      .avatar {
+        display: flex;
+        align-items: center;
+        padding-left: 1.6rem;
+
+        > img {
+          margin-right: 1.2rem;
+          width: 3.6rem;
+          height: 3.6rem;
+          border: 1px solid var(--line);
+          border-radius: 1.2rem;
+        }
+        > p {
+          font-weight: 600;
+          font-size: 1.6rem;
+          color: var(--text-2);
+        }
+      }
+      + main {
+        padding-top: 6.8rem;
+      }
     }
   }
 

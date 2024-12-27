@@ -190,6 +190,37 @@
   flex: 1;
 }
 
+#toggle_slider {
+  display: none;
+}
+#toggle_slider:checked + label {
+  background-color: var(--primary-Y);
+}
+#toggle_slider:checked + label::after {
+  left: 2.2rem;
+}
+#toggle_slider + label {
+  cursor: pointer;
+  width: 5rem;
+  height: 3rem;
+  text-indent: -9999em;
+  background-color: var(--gray999);
+  border-radius: 25px;
+  position: relative;
+  transition: 0.4s ease-in-out;
+}
+#toggle_slider + label::after {
+  content: "";
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 0.2rem;
+  left: 0.2rem;
+  transition: 0.4s ease-in-out;
+}
+
 .capsule {
   padding: 5px;
 }
@@ -295,6 +326,29 @@
 }
 .wrap header .btn_setting {
   background: url(../images/icon_setting.svg) no-repeat center/2.4rem;
+}
+.wrap header.profile {
+  height: 6.8rem;
+}
+.wrap header.profile .avatar {
+  display: flex;
+  align-items: center;
+  padding-left: 1.6rem;
+}
+.wrap header.profile .avatar > img {
+  margin-right: 1.2rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  border: 1px solid var(--line);
+  border-radius: 1.2rem;
+}
+.wrap header.profile .avatar > p {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--text-2);
+}
+.wrap header.profile + main {
+  padding-top: 6.8rem;
 }
 .wrap .sideMenu {
   position: fixed;
