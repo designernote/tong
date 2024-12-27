@@ -32,7 +32,7 @@
               <ul class="ranking_list">
                 <li>
                   <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
+                    <img src="./assets/images/ex_img.png" class="thumb_img" alt="">
                     <div class="inner_txt">
                       <p>부동산 / 금나와라부동산</p>
                       <small>서울시 동작구 양녕로 220, 상가 103호</small>
@@ -45,7 +45,7 @@
                 </li>
                 <li>
                   <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
+                    <img src="./assets/images/ex_img.png" class="thumb_img" alt="">
                     <div class="inner_txt">
                       <p>부동산 / 금나와라부동산</p>
                       <small>서울시 동작구 양녕로 220, 상가 103호</small>
@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
+                    <img src="./assets/images/ex_img.png" class="thumb_img" alt="">
                     <div class="inner_txt">
                       <p>부동산 / 금나와라부동산</p>
                       <small>서울시 동작구 양녕로 220, 상가 103호</small>
@@ -84,7 +84,7 @@
               <ul class="ranking_list">
                 <li>
                   <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
+                    <img src="./assets/images/ex_img.png" class="thumb_img" alt="">
                     <div class="inner_txt">
                       <p>부동산 / 금나와라부동산</p>
                       <small>서울시 동작구 양녕로 220, 상가 103호</small>
@@ -97,7 +97,7 @@
                 </li>
                 <li>
                   <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
+                    <img src="./assets/images/ex_img.png" class="thumb_img" alt="">
                     <div class="inner_txt">
                       <p>부동산 / 금나와라부동산</p>
                       <small>서울시 동작구 양녕로 220, 상가 103호</small>
@@ -110,7 +110,7 @@
                 </li>
                 <li>
                   <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
+                    <img src="./assets/images/ex_img.png" class="thumb_img" alt="">
                     <div class="inner_txt">
                       <p>부동산 / 금나와라부동산</p>
                       <small>서울시 동작구 양녕로 220, 상가 103호</small>

@@ -194,30 +194,30 @@
   display: none;
 }
 #toggle_slider:checked + label {
-  background-color: var(--primary-Y);
+  background: var(--primary-Y);
 }
 #toggle_slider:checked + label::after {
   left: 2.2rem;
 }
 #toggle_slider + label {
   cursor: pointer;
+  position: relative;
   width: 5rem;
   height: 3rem;
-  text-indent: -9999em;
-  background-color: var(--gray999);
   border-radius: 25px;
-  position: relative;
+  text-indent: -9999em;
+  background: var(--gray999);
   transition: 0.4s ease-in-out;
 }
 #toggle_slider + label::after {
   content: "";
-  width: 2.6rem;
-  height: 2.6rem;
-  background-color: #fff;
   position: absolute;
-  border-radius: 50%;
   top: 0.2rem;
   left: 0.2rem;
+  height: 2.6rem;
+  width: 2.6rem;
+  border-radius: 50%;
+  background: #fff;
   transition: 0.4s ease-in-out;
 }
 
@@ -247,7 +247,6 @@
   justify-content: space-between;
   align-items: center;
   line-height: 4.4rem;
-  letter-spacing: -1;
 }
 .title > p {
   font-size: 2rem;
@@ -270,6 +269,39 @@
   margin: 0 -1.6rem;
   height: 0.8rem;
   background: var(--bg-color-2);
+}
+
+.splash_screen {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  background: var(--primary-Y);
+}
+.splash_screen .splash_logo {
+  margin-bottom: 5.7rem;
+  width: 23.3rem;
+  height: 10.8rem;
+  background: url(../images/logo_visual.svg) no-repeat center/contain;
+  animation: bounce-in-left 2s both;
+}
+.splash_screen .title_box {
+  width: 36rem;
+  padding-right: 2.4rem;
+  text-align: right;
+}
+.splash_screen .title_box > p {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--white);
+  animation: slide-in-right 2s ease-in both;
+}
+.splash_screen .title_box > p:nth-of-type(2) {
+  animation: slide-in-right 2s ease-in 400ms both;
 }
 
 .wrap {
@@ -329,6 +361,7 @@
 }
 .wrap header.profile {
   height: 6.8rem;
+  border-bottom: none;
 }
 .wrap header.profile .avatar {
   display: flex;
@@ -376,7 +409,6 @@
   padding: 1rem 0 0.4rem;
   font-size: 2rem;
   font-weight: 600;
-  letter-spacing: -1;
 }
 .wrap .sideMenu .sideTitle > p + .side_close {
   margin-top: 0.5rem;
@@ -405,7 +437,7 @@
 .wrap .sideMenu .apt_select > li.on .inner_txt > li:nth-of-type(1), .wrap .sideMenu .apt_select > li.on .inner_txt > li:nth-of-type(2) {
   color: var(--primary-Y);
 }
-.wrap .sideMenu .apt_select > li .thum_img2 {
+.wrap .sideMenu .apt_select > li .thumb_img2 {
   margin-right: 1.3rem;
   width: 8.2rem;
   height: 8.2rem;
@@ -418,7 +450,6 @@
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.8rem;
-  letter-spacing: -1;
 }
 .wrap .sideMenu .apt_select > li .inner_txt > li:nth-of-type(2) {
   padding-bottom: 0.6rem;
@@ -514,7 +545,6 @@
   font-weight: 600;
   color: var(--white);
   line-height: initial;
-  letter-spacing: -1;
 }
 .wrap main .container section .visual_banner .banner_text p {
   font-size: 1.6rem;
@@ -593,7 +623,7 @@
   display: flex;
   align-items: center;
 }
-.wrap main .container section.item_list .item .ranking_list > li > div > .thum_img {
+.wrap main .container section.item_list .item .ranking_list > li > div > .thumb_img {
   margin-right: 1.6rem;
   width: 7.2rem;
   height: 7.2rem;
@@ -629,7 +659,7 @@
 .wrap main .container section .detail_view .img_container {
   margin: 0 -1.6rem;
 }
-.wrap main .container section .detail_view .img_container .thum_img3 {
+.wrap main .container section .detail_view .img_container .thumb_img3 {
   width: 100%;
   max-width: 102.4rem;
   min-width: 39rem;
@@ -640,7 +670,6 @@
   padding-top: 1.6rem;
   font-size: 2.4rem;
   font-weight: 600;
-  letter-spacing: -1;
 }
 .wrap main .container section .detail_view > p > small {
   margin-left: 0.5rem;
@@ -667,6 +696,10 @@
   width: 1.2rem;
   height: 1.2rem;
   background: url(../images/icon_rating.svg) no-repeat center/contain;
+}
+.wrap main .container section .detail_view .introduce {
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 .wrap main .container section .user_act {
   display: flex;
@@ -735,6 +768,9 @@
 .wrap main .container section .place_info > ul li + li {
   margin-top: 0.8rem;
 }
+.wrap main .container section .place_info + .button {
+  margin-bottom: 3.3rem;
+}
 .wrap main .container section .benefit form {
   padding: 1.6rem 0;
 }
@@ -782,6 +818,122 @@
   height: 2.4rem;
   background: url(../images/icon_arrow.svg) no-repeat center/contain;
 }
+.wrap main .container section .my_list > li.myAPT::after {
+  display: none;
+}
+.wrap main .container section .my_list + .title {
+  margin-top: 2.4rem;
+}
+.wrap main .container section .toggle_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -1.6rem;
+  padding: 0 1.6rem;
+  height: 4.8rem;
+  background: var(--bg-color-3);
+}
+.wrap main .container section .toggle_bar > p {
+  font-size: 1.6rem;
+}
+.wrap main .container section .toggle_bar + .button {
+  margin: 6.2rem 0;
+}
+.wrap main .container section .toggle_bar + .detail_view > p {
+  padding: 2.6rem 0;
+}
+.wrap main .container section .login_title_box {
+  margin: 3.7rem 0 4.1rem 3rem;
+}
+.wrap main .container section .login_title_box > .logo {
+  width: 16.3rem;
+  height: 7.2rem;
+  background: url(../images/logo_login.svg) no-repeat center/contain;
+}
+.wrap main .container section .login_title_box > p {
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--line1);
+}
+.wrap main .container section .social_area > .button {
+  position: relative;
+}
+.wrap main .container section .social_area > .button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1.6rem;
+  transform: translateY(-50%);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.wrap main .container section .social_area > .button + .button {
+  margin-top: 1.6rem;
+}
+.wrap main .container section .social_area > .button.naver {
+  background: var(--naver--color);
+}
+.wrap main .container section .social_area > .button.naver::before {
+  background: url(../images/social_naver.png) no-repeat center/contain;
+}
+.wrap main .container section .social_area > .button.kakao {
+  color: var(--text-1);
+  background: var(--kakao--color);
+}
+.wrap main .container section .social_area > .button.kakao::before {
+  background: url(../images/social_kakao.png) no-repeat center/contain;
+}
+.wrap main .container section .social_area > .button.google {
+  color: var(--text-1);
+  border: 1px solid var(--line);
+  background: var(--google--color);
+}
+.wrap main .container section .social_area > .button.google::before {
+  background: url(../images/social_google.png) no-repeat center/contain;
+}
+.wrap main .container section .login_area .bar_and {
+  position: relative;
+  margin: 2.4rem 0;
+  padding-top: 0.9rem;
+  height: 1.8rem;
+}
+.wrap main .container section .login_area .bar_and::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 1px solid rgba(187, 197, 204, 0.4);
+}
+.wrap main .container section .login_area .bar_and > span {
+  position: absolute;
+  top: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7rem;
+  height: 1.8rem;
+  color: var(--text-4);
+  text-align: center;
+  background: var(--white);
+  z-index: 9;
+}
+.wrap main .container section .login_area .btnBox_col {
+  display: flex;
+}
+.wrap main .container section .login_area .btnBox_col > .button + .button {
+  margin-left: 0.8rem;
+}
+.wrap main .container section .login_area .btnBox_col > .button.btn_email {
+  color: var(--text-tab1);
+  background: var(--text-tab2);
+}
+.wrap main .container section .login_area > p {
+  margin: 2.4rem auto 0;
+  width: 26.6rem;
+  font-size: 1.2rem;
+  color: var(--text-3);
+  text-align: center;
+  letter-spacing: -0.5;
+}
 .wrap footer {
   position: fixed;
   bottom: 0;
@@ -817,22 +969,7 @@
 .wrap footer .tab_menu > li .menu.on span {
   color: var(--text-tab1);
 }
-@keyframes slid_in {
-  0% {
-    right: -100%;
-  }
-  100% {
-    right: 0;
-  }
-}
-@keyframes slid_out {
-  0% {
-    right: 0;
-  }
-  100% {
-    right: -100%;
-  }
-}
+
 /* .ellipsis */
 .ellipsis {
   overflow: hidden;
@@ -885,7 +1022,10 @@ label {
   background: url(../images/icon_search.svg) no-repeat center/contain;
 }
 .input_wrap.search > input[type=text] {
-  width: calc(100% - 3.2rem);
+  width: calc(100% - 4.8rem);
+}
+.input_wrap.map {
+  border: 1px solid red;
 }
 .input_wrap.benefit_txt {
   flex-direction: row;
@@ -905,4 +1045,76 @@ label {
   border-radius: 1.2rem;
   line-height: 5rem;
   background: var(--primary-Y);
+}
+@keyframes slid_in {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes slid_out {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100%;
+  }
+}
+/**
+ * ----------------------------------------
+ * animation bounce-in-left
+ * ----------------------------------------
+ */
+@keyframes bounce-in-left {
+  0% {
+    transform: translateX(-600px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateX(-68px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateX(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateX(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+}
+/**
+ * ----------------------------------------
+ * animation slide-in-right
+ * ----------------------------------------
+ */
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

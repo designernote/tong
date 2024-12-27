@@ -31,23 +31,37 @@
               <input type="checkbox" id="toggle_slider"/>
               <label for="toggle_slider">on/off</label>
             </div>
+
+            <div class="detail_view">
+              <p>금나와라공인중계사<small>부동산</small></p>
+              <span class="introduce">
+              금나와라뚝닥 부동산은 어디어디에 위치하여 고객과의 소통을 통해 이런저런 공인중개사로써 최선을 다하고 좋은 서비스로 보답하는 부동산입니다.
+              </span>
+            </div>
+            <div class="place_info">
+              <ul>
+                <li>
+                  경기 성남시 분당구 판교역로 192번길 14-2 골드타워 2층 도원참치
+                  <!-- <span>판교역 1번 출구에서 325m</span> -->
+                </li>
+                <li>영업시작 오전 10:00 ~ 오후 7:00</li>
+                <li>031-000-0000</li>
+                <li>https://www.dowontuna.com/</li>
+              </ul>
+            </div>
+            
+            <button class="button">나의 점포 생성하기</button>
+            
             <div class="title">
               <p>나의활동</p>
             </div>
             <ul class="my_list">
               <li>내 프로필</li>
-              <li>내가 찜한 스토어</li>
-              <li class="myAPT">내 아파트
-                <div class="capsule">
-                  <button>상도 롯데케슬 파크아파트</button>
-                </div>
-              </li>
             </ul>
             <div class="title">
               <p>기타</p>
             </div>
             <ul class="my_list">
-              <li>친구 초대</li>
               <li>공지사항</li>
               <li>자주 묻는 질문</li>
               <li>문의하기</li>

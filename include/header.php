@@ -35,7 +35,7 @@
         </div>
         <ul class="apt_select">
           <li>
-            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <img src="./assets/images/ex_img2.png" class="thumb_img2" alt="">
             <ol class="inner_txt">
               <li>구로 힐스테이트 포레나</li>
               <li>서울시 구로구 동원로 2길 32</li>
@@ -44,7 +44,7 @@
             </ol>
           </li>
           <li class="on">
-            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <img src="./assets/images/ex_img2.png" class="thumb_img2" alt="">
             <ol class="inner_txt">
               <li>구로 힐스테이트 포레나</li>
               <li>서울시 구로구 동원로 2길 32</li>
@@ -53,7 +53,7 @@
             </ol>
           </li>
           <li>
-            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <img src="./assets/images/ex_img2.png" class="thumb_img2" alt="">
             <ol class="inner_txt">
               <li>구로 힐스테이트 포레나</li>
               <li>서울시 구로구 동원로 2길 32</li>
@@ -62,7 +62,7 @@
             </ol>
           </li>
           <li>
-            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <img src="./assets/images/ex_img2.png" class="thumb_img2" alt="">
             <ol class="inner_txt">
               <li>구로 힐스테이트 포레나</li>
               <li>서울시 구로구 동원로 2길 32</li>
@@ -71,7 +71,7 @@
             </ol>
           </li>
           <li>
-            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <img src="./assets/images/ex_img2.png" class="thumb_img2" alt="">
             <ol class="inner_txt">
               <li>구로 힐스테이트 포레나</li>
               <li>서울시 구로구 동원로 2길 32</li>
@@ -80,7 +80,7 @@
             </ol>
           </li>
           <li>
-            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <img src="./assets/images/ex_img2.png" class="thumb_img2" alt="">
             <ol class="inner_txt">
               <li>구로 힐스테이트 포레나</li>
               <li>서울시 구로구 동원로 2길 32</li>
@@ -89,7 +89,7 @@
             </ol>
           </li>
           <li>
-            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <img src="./assets/images/ex_img2.png" class="thumb_img2" alt="">
             <ol class="inner_txt">
               <li>구로 힐스테이트 포레나</li>
               <li>서울시 구로구 동원로 2길 32</li>
@@ -98,7 +98,7 @@
             </ol>
           </li>
           <li>
-            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <img src="./assets/images/ex_img2.png" class="thumb_img2" alt="">
             <ol class="inner_txt">
               <li>구로 힐스테이트 포레나</li>
               <li>서울시 구로구 동원로 2길 32</li>
@@ -107,7 +107,7 @@
             </ol>
           </li>
           <li>
-            <img src="./assets/images/ex_img2.png" class="thum_img2" alt="">
+            <img src="./assets/images/ex_img2.png" class="thumb_img2" alt="">
             <ol class="inner_txt">
               <li>구로 힐스테이트 포레나</li>
               <li>서울시 구로구 동원로 2길 32</li>

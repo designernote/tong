@@ -38,7 +38,7 @@
   color: var(--text-red);
 }
 
-.swiper-slide .swiper_item > li img.thum_img1 {
+.swiper-slide .swiper_item > li img.thumb_img1 {
   display: block;
   margin-right: 1rem;
   width: 11rem;

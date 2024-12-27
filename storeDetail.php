@@ -26,7 +26,7 @@
           <section>
             <div class="detail_view">
               <div class="img_container">
-                <img src="./assets/images/ex_img3.png" class="thum_img3" alt="">
+                <img src="./assets/images/ex_img3.png" class="thumb_img3" alt="">
               </div>
               <p>금나와라공인중계사<small>부동산</small></p>
               <span>AI혜택 점수 <em>4.8</em></span>
@@ -43,7 +43,7 @@
                   경기 성남시 분당구 판교역로 192번길 14-2 골드타워 2층 도원참치
                   <!-- <span>판교역 1번 출구에서 325m</span> -->
                 </li>
-                <li>p영업시작 오전 10:00 ~ 오후 7:00</li>
+                <li>영업시작 오전 10:00 ~ 오후 7:00</li>
                 <li>031-000-0000</li>
                 <li>https://www.dowontuna.com/</li>
               </ul>
