@@ -115,7 +115,7 @@ include 'include/header.php';
                   <div class="swiper-slide">
                     <ul class="swiper_item">
                       <li>
-                        <img src="./assets/images/ex_img1.png" class="thum_img1" alt="">
+                        <img src="./assets/images/ex_img1.png" class="thumb_img1" alt="">
                         <ol class="inner_txt">
                           <li>LG전자 베스트샵</li>
                           <li>신검단 중앙역 풍경채 어바니티</li>
@@ -124,7 +124,7 @@ include 'include/header.php';
                         </ol>
                       </li>
                       <li>
-                        <img src="./assets/images/ex_img1.png" class="thum_img1" alt="">
+                        <img src="./assets/images/ex_img1.png" class="thumb_img1" alt="">
                         <ol class="inner_txt">
                           <li>LG전자 베스트샵</li>
                           <li>신검단 중앙역 풍경채 어바니티</li>
@@ -137,7 +137,7 @@ include 'include/header.php';
                   <div class="swiper-slide">
                     <ul class="swiper_item">
                       <li>
-                        <img src="./assets/images/ex_img1.png" class="thum_img1" alt="">
+                        <img src="./assets/images/ex_img1.png" class="thumb_img1" alt="">
                         <ol class="inner_txt">
                           <li>LG전자 베스트샵</li>
                           <li>신검단 중앙역 풍경채 어바니티</li>
@@ -146,7 +146,7 @@ include 'include/header.php';
                         </ol>
                       </li>
                       <li>
-                        <img src="./assets/images/ex_img1.png" class="thum_img1" alt="">
+                        <img src="./assets/images/ex_img1.png" class="thumb_img1" alt="">
                         <ol class="inner_txt">
                           <li>LG전자 베스트샵</li>
                           <li>신검단 중앙역 풍경채 어바니티</li>
@@ -168,7 +168,7 @@ include 'include/header.php';
               <ul class="ranking_list">
                 <li>
                   <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
+                    <img src="./assets/images/ex_img.png" class="thumb_img" alt="">
                     <div class="inner_txt">
                       <p>부동산 / 금나와라부동산</p>
                       <small>서울시 동작구 양녕로 220, 상가 103호</small>
@@ -181,7 +181,7 @@ include 'include/header.php';
                 </li>
                 <li>
                   <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
+                    <img src="./assets/images/ex_img.png" class="thumb_img" alt="">
                     <div class="inner_txt">
                       <p>부동산 / 금나와라부동산</p>
                       <small>서울시 동작구 양녕로 220, 상가 103호</small>
@@ -194,7 +194,7 @@ include 'include/header.php';
                 </li>
                 <li>
                   <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
+                    <img src="./assets/images/ex_img.png" class="thumb_img" alt="">
                     <div class="inner_txt">
                       <p>부동산 / 금나와라부동산</p>
                       <small>서울시 동작구 양녕로 220, 상가 103호</small>
@@ -215,7 +215,7 @@ include 'include/header.php';
               <ul class="ranking_list">
                 <li>
                   <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
+                    <img src="./assets/images/ex_img.png" class="thumb_img" alt="">
                     <div class="inner_txt">
                       <p>부동산 / 금나와라부동산</p>
                       <small>서울시 동작구 양녕로 220, 상가 103호</small>
@@ -228,7 +228,7 @@ include 'include/header.php';
                 </li>
                 <li>
                   <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
+                    <img src="./assets/images/ex_img.png" class="thumb_img" alt="">
                     <div class="inner_txt">
                       <p>부동산 / 금나와라부동산</p>
                       <small>서울시 동작구 양녕로 220, 상가 103호</small>
@@ -241,7 +241,7 @@ include 'include/header.php';
                 </li>
                 <li>
                   <div>
-                    <img src="./assets/images/ex_img.png" class="thum_img" alt="">
+                    <img src="./assets/images/ex_img.png" class="thumb_img" alt="">
                     <div class="inner_txt">
                       <p>부동산 / 금나와라부동산</p>
                       <small>서울시 동작구 양녕로 220, 상가 103호</small>

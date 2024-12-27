@@ -31,23 +31,19 @@
               <input type="checkbox" id="toggle_slider"/>
               <label for="toggle_slider">on/off</label>
             </div>
+            
+            <button class="button">나의 점포 생성하기</button>
+            
             <div class="title">
               <p>나의활동</p>
             </div>
             <ul class="my_list">
               <li>내 프로필</li>
-              <li>내가 찜한 스토어</li>
-              <li class="myAPT">내 아파트
-                <div class="capsule">
-                  <button>상도 롯데케슬 파크아파트</button>
-                </div>
-              </li>
             </ul>
             <div class="title">
               <p>기타</p>
             </div>
             <ul class="my_list">
-              <li>친구 초대</li>
               <li>공지사항</li>
               <li>자주 묻는 질문</li>
               <li>문의하기</li>

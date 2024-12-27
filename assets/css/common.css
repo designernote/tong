@@ -17,6 +17,11 @@
   --line1: #7e7e7e;
   --line2: rgb(0 0 0 / 5%);
   --bg-color-2: #f2f8fc;
+  --bg-color-3: #f5f5f5;
+
+  --naver--color: #00d03f;
+  --kakao--color: #fae100;
+  --google--color: var(--white);
 
   --primary-c-y: #f5d590;
   --primary-c-b: #000;
@@ -111,6 +116,7 @@ body {
   color: var(--text-1);
   background-color: #fff;
   font-size: 1.4rem;
+  letter-spacing: -0.6;
 }
 
 body {
@@ -315,9 +321,9 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+/* button:hover {
   color: inherit;
-}
+} */
 
 input::-ms-clear,
 input::-ms-reveal {
