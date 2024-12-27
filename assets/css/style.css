@@ -190,6 +190,37 @@
   flex: 1;
 }
 
+#toggle_slider {
+  display: none;
+}
+#toggle_slider:checked + label {
+  background-color: var(--primary-Y);
+}
+#toggle_slider:checked + label::after {
+  left: 2.2rem;
+}
+#toggle_slider + label {
+  cursor: pointer;
+  width: 5rem;
+  height: 3rem;
+  text-indent: -9999em;
+  background-color: var(--gray999);
+  border-radius: 25px;
+  position: relative;
+  transition: 0.4s ease-in-out;
+}
+#toggle_slider + label::after {
+  content: "";
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 0.2rem;
+  left: 0.2rem;
+  transition: 0.4s ease-in-out;
+}
+
 .capsule {
   padding: 5px;
 }
@@ -295,6 +326,29 @@
 }
 .wrap header .btn_setting {
   background: url(../images/icon_setting.svg) no-repeat center/2.4rem;
+}
+.wrap header.profile {
+  height: 6.8rem;
+}
+.wrap header.profile .avatar {
+  display: flex;
+  align-items: center;
+  padding-left: 1.6rem;
+}
+.wrap header.profile .avatar > img {
+  margin-right: 1.2rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  border: 1px solid var(--line);
+  border-radius: 1.2rem;
+}
+.wrap header.profile .avatar > p {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--text-2);
+}
+.wrap header.profile + main {
+  padding-top: 6.8rem;
 }
 .wrap .sideMenu {
   position: fixed;
@@ -684,6 +738,50 @@
 .wrap main .container section .benefit form {
   padding: 1.6rem 0;
 }
+.wrap main .container section .login_induce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.6rem 0;
+}
+.wrap main .container section .login_induce > p {
+  padding-bottom: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-2);
+}
+.wrap main .container section .login_induce > p + .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.8rem;
+  width: initial;
+  font-size: 1.4rem;
+  color: var(--white);
+  line-height: 3.6rem;
+  border-radius: 0.8rem;
+  background: var(--primary-Y);
+}
+.wrap main .container section .login_induce > p + .button::before {
+  content: "";
+  margin-right: 0.4rem;
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/icon_plus_white.svg) no-repeat center/contain;
+}
+.wrap main .container section .my_list > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.8rem;
+  font-size: 1.6rem;
+}
+.wrap main .container section .my_list > li::after {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../images/icon_arrow.svg) no-repeat center/contain;
+}
 .wrap footer {
   position: fixed;
   bottom: 0;
@@ -735,9 +833,76 @@
     right: -100%;
   }
 }
+/* .ellipsis */
 .ellipsis {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: break-all;
+}
+
+/* input */
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background: transparent;
+}
+
+label {
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: var(--text-2);
+}
+
+.input_wrap {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  font-size: 1.6rem;
+  border-radius: 1.2rem;
+}
+.input_wrap > input[type=text] {
+  padding: 0 1rem;
+  width: 100%;
+}
+.input_wrap > input[type=text]::-moz-placeholder {
+  color: var(--text-4);
+}
+.input_wrap > input[type=text]::placeholder {
+  color: var(--text-4);
+}
+.input_wrap.search {
+  margin: 0.8rem -0.8rem;
+  background: var(--bg-color-2);
+}
+.input_wrap.search::before {
+  content: "";
+  margin-left: 0.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../images/icon_search.svg) no-repeat center/contain;
+}
+.input_wrap.search > input[type=text] {
+  width: calc(100% - 3.2rem);
+}
+.input_wrap.benefit_txt {
+  flex-direction: row;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+}
+.input_wrap.benefit_txt + label {
+  margin-top: 1.6px;
+}
+
+/* button */
+.button {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 1.2rem;
+  line-height: 5rem;
+  background: var(--primary-Y);
 }/*# sourceMappingURL=style.css.map */

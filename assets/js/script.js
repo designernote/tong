@@ -1,20 +1,17 @@
 $(document).ready(function () {
   // 사이드메뉴 펼치기기
-  $(".btn_sideMenu").click(function () {
+  $(".btn_sideMenu").click(function (e) {
     $(".sideMenu").addClass("open");
     $(".gnb_bg").fadeIn(750);
     $("body").css("overflow", "hidden");
+    e.preventDefault();
   });
 
-  $(".side_close").click(function () {
+  // 사이드메뉴 닫기기
+  $(".side_close, .gnb_bg").click(function (e) {
     $(".sideMenu").addClass("out").removeClass("open");
     $(".gnb_bg").fadeOut(750);
     $("body").css("overflow", "initial");
-  });
-
-  $(".gnb_bg").click(function (e) {
-    $(".sideMenu").addClass("out").removeClass("open");
-    $(".gnb_bg").fadeOut(750);
     e.preventDefault();
   });
 

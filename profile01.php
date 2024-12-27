@@ -16,17 +16,20 @@
 
   <body>
     <section class="wrap">
-      <header class="header">
-        <!-- <h1 class="back"><a href="index.html">back</a></h1> -->
-        <h2 class="page_title">마이 페이지</h2>
+      <header class="header profile">
+        <div class="avatar">
+          <img src="./assets/images/ex_img4.png" alt="">
+          <p>hong@gmail.com</p>
+        </div>
         <a href="#" class="btn_setting">설정</a>
       </header>
       <main role="main">
         <div class="container">
           <section>
-            <div class="login_induce">
-              <p>회원 가입하여 더 많은 혜택을 누려보세요</p>
-              <button class="button">로그인 및 회원가입</button>
+            <div class="toggle_bar">
+              <p>광고주 전환하기</p>
+              <input type="checkbox" id="toggle_slider"/>
+              <label for="toggle_slider">on/off</label>
             </div>
             <div class="bar"></div>
             <ul class="my_list">
