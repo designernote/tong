@@ -1,5 +1,5 @@
-@import url("common.css");
-@import url("swiper.css");
+@import url('common.css');
+@import url('swiper.css');
 
 @for $i from 1 through 10 {
   .Icon_#{$i} {
@@ -57,7 +57,7 @@
     transition: 0.4s ease-in-out;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0.2rem;
       left: 0.2rem;
@@ -121,7 +121,6 @@
   height: 0.8rem;
   background: var(--bg-color-2);
 }
-
 .splash_screen {
   position: static;
   display: flex;
@@ -161,6 +160,49 @@
     }
   }
 }
+//*** 지도아이콘 ***//
+.currentLocation {
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../images/icon_current_location.svg) no-repeat center /
+    contain;
+  filter: drop-shadow(0 0 0.8rem rgba(0 0 0 / 29%));
+}
+.pointLocation {
+  display: flex;
+  align-items: center;
+  > p {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--black);
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    &::before {
+      content: '';
+      width: 3.2rem;
+      height: 2.6rem;
+    }
+    &.food {
+      &::before {
+        background: url(../images/icon_location_food.png) no-repeat center /
+          contain;
+      }
+    }
+  }
+}
+
+.back {
+  > a {
+    display: block;
+    font-size: 0;
+    color: transparent;
+    width: 4.8rem;
+    height: 4.8rem;
+    background: url(../images/h_back.svg) no-repeat center / contain;
+  }
+}
 
 .wrap {
   position: relative;
@@ -194,17 +236,6 @@
       }
     }
 
-    .back {
-      > a {
-        display: block;
-        font-size: 0;
-        color: transparent;
-        width: 4.8rem;
-        height: 4.8rem;
-        background: url(../images/h_back.svg) no-repeat center / contain;
-      }
-    }
-
     .page_title {
       position: absolute;
       left: 50%;
@@ -227,6 +258,11 @@
     .btn_setting {
       @extend .btn_sideMenu;
       background: url(../images/icon_setting.svg) no-repeat center / 2.4rem;
+    }
+
+    .btn_option {
+      @extend .btn_sideMenu;
+      background: url(../images/h_option.svg) no-repeat center / contain;
     }
 
     &.profile {
@@ -375,9 +411,13 @@
   main {
     padding: 4.8rem 0 8.4rem;
 
-    &.category_page {
-      padding-top: 1.7rem;
-      > .container {
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.6rem 2rem;
+
+      &.category_page {
+        margin-top: -1.7rem;
         > section {
           .category {
             margin: initial;
@@ -421,12 +461,11 @@
           }
         }
       }
-    }
 
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 1.6rem 2rem;
+      &.map_page {
+        margin-top: -4.8rem;
+        padding-bottom: 0;
+      }
 
       section {
         .visual_banner {
@@ -480,7 +519,7 @@
           background: var(--black);
 
           &::after {
-            content: "";
+            content: '';
             display: inline-block;
             width: 2.4rem;
             height: 2.4rem;
@@ -530,7 +569,7 @@
                 border-bottom: 1px solid var(--line1);
                 &:nth-child(-n + 5) {
                   &::before {
-                    content: "";
+                    content: '';
                     display: inline-block;
                     margin-right: 1.5rem;
                     width: 3.4rem;
@@ -637,7 +676,7 @@
                 font-weight: 600;
 
                 &::before {
-                  content: "";
+                  content: '';
                   display: inline-block;
                   margin-right: 0.5rem;
                   width: 1.2rem;
@@ -673,7 +712,7 @@
             color: var(--text-2);
 
             &::before {
-              content: "";
+              content: '';
               // display: block;
               width: 2.4rem;
               height: 2.4rem;
@@ -711,7 +750,7 @@
               font-weight: 600;
               line-height: 2.4rem;
               &::before {
-                content: "";
+                content: '';
                 margin-right: 1.6rem;
                 width: 2.4rem;
                 height: 2.4rem;
@@ -756,6 +795,67 @@
         .benefit {
           form {
             padding: 1.6rem 0;
+
+            label {
+              padding-bottom: 0.5rem;
+              font-size: 1.3rem;
+              color: var(--text-2);
+            }
+          }
+        }
+
+        .store_detail {
+          form {
+            padding: 1.6rem 0;
+
+            &:nth-of-type(2) {
+              .detail_input {
+                + label {
+                  margin-top: 2.6rem;
+                }
+              }
+            }
+
+            + form {
+              margin-top: 0.9rem;
+            }
+
+            label {
+              display: flex;
+              justify-content: space-between;
+              padding-bottom: 0.5rem;
+              font-size: 1.4rem;
+              font-weight: 500;
+              color: var(--text-2);
+
+              span {
+                > em {
+                  color: var(--text-violet);
+                }
+              }
+            }
+          }
+          .button {
+            display: flex;
+            align-items: center;
+            padding: 0 1.4rem;
+            width: initial;
+            height: 2.9rem;
+            font-weight: 500;
+            color: var(--text-1);
+            border: 1px solid var(--text-1);
+            border-radius: 0.2rem;
+            line-height: 2.9rem;
+            background: #fff;
+
+            &::before {
+              content: '';
+              margin-right: 0.5rem;
+              width: 1.5rem;
+              height: 1.8rem;
+              background: url(../images/icon_aiTwinkle.png) no-repeat center /
+                contain;
+            }
           }
         }
 
@@ -783,7 +883,7 @@
               background: var(--primary-Y);
 
               &::before {
-                content: "";
+                content: '';
                 margin-right: 0.4rem;
                 width: 2rem;
                 height: 2rem;
@@ -802,7 +902,7 @@
             height: 4.8rem;
             font-size: 1.6rem;
             &::after {
-              content: "";
+              content: '';
               width: 2.4rem;
               height: 2.4rem;
               background: url(../images/icon_arrow.svg) no-repeat center /
@@ -863,7 +963,7 @@
           > .button {
             position: relative;
             &::before {
-              content: "";
+              content: '';
               position: absolute;
               top: 50%;
               left: 1.6rem;
@@ -909,7 +1009,7 @@
             padding-top: 0.9rem;
             height: 1.8rem;
             &::after {
-              content: "";
+              content: '';
               display: block;
               width: 100%;
               border-top: 1px solid rgba($color: #bbc5cc, $alpha: 0.4);
@@ -948,6 +1048,75 @@
             text-align: center;
             letter-spacing: -0.5;
           }
+        }
+
+        .map_search {
+          display: flex;
+          .back {
+            margin-left: -1.2rem;
+          }
+          .input_wrap {
+            &.search {
+              flex: 1;
+              margin-left: 0;
+            }
+          }
+        }
+
+        .location_capsule {
+          position: absolute;
+          top: 5.6rem;
+          left: 0;
+          right: 0;
+          display: flex;
+          white-space: nowrap;
+          margin-right: -1.6rem;
+          padding: 1.6rem;
+          overflow-x: auto;
+          > li {
+            display: flex;
+            align-items: center;
+            padding: 0.2rem 1.2rem 0;
+            height: 3.6rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-2);
+            border: 1px solid var(--line);
+            border-radius: 9999px;
+            background: var(--white);
+            + li {
+              margin-left: 0.8rem;
+            }
+            &:nth-last-of-type(1) {
+              margin-right: 0.8rem;
+            }
+            &::before {
+              content: '';
+              margin-top: -0.4rem;
+              margin-right: 0.4rem;
+              width: 2rem;
+              height: 2rem;
+              background: url(../images/icon_location.svg) no-repeat center /
+                contain;
+            }
+          }
+        }
+
+        .floating_btn {
+          position: absolute;
+          bottom: 10rem;
+          width: 4rem;
+          height: 4rem;
+          background: url(../images/icon_floating_btn.svg) no-repeat center /
+            contain;
+          filter: drop-shadow(0 0.8rem 2.4rem rgba(0 0 0 / 10%));
+        }
+
+        .mapBG {
+          white-space: nowrap;
+          margin: 0 -1.6rem;
+          height: calc(100% - 56px - 83px);
+          background: url(../images/ex_img5.png) no-repeat center / cover;
         }
       }
     }
@@ -1012,12 +1181,6 @@ input {
   background: transparent;
 }
 
-label {
-  padding-bottom: 0.5rem;
-  font-size: 1.3rem;
-  color: var(--text-2);
-}
-
 .input_wrap {
   display: flex;
   align-items: center;
@@ -1025,7 +1188,7 @@ label {
   font-size: 1.6rem;
   border-radius: 1.2rem;
 
-  > input[type="text"] {
+  > input[type='text'] {
     padding: 0 1rem;
     width: 100%;
     &::placeholder {
@@ -1037,13 +1200,13 @@ label {
     margin: 0.8rem -0.8rem;
     background: var(--bg-color-2);
     &::before {
-      content: "";
+      content: '';
       margin-left: 0.8rem;
       width: 2.4rem;
       height: 2.4rem;
       background: url(../images/icon_search.svg) no-repeat center / contain;
     }
-    > input[type="text"] {
+    > input[type='text'] {
       width: calc(100% - 4.8rem);
     }
   }
@@ -1055,15 +1218,28 @@ label {
     // }
   }
 
-  &.benefit_txt {
+  &.benefit_input {
     flex-direction: row;
     border: 1px solid var(--line);
     border-radius: 0.8rem;
 
     + label {
-      margin-top: 1.6px;
+      margin-top: 1.6rem;
     }
   }
+
+  &.detail_input {
+    @extend .benefit_input;
+    + label {
+      margin-top: 1.4rem;
+    }
+    + .detail_input {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.input_selest {
 }
 /* button */
 .button {
