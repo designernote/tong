@@ -16,17 +16,22 @@
   </head>
 
   <body>
-    <div style="display: flex;">
-        <div><ul>
+    <div style="display: flex; width: 100%; ">
+        <div style="width: 20%; "><ul>
         <li><a href="#" onclick="loadIframe('index.php')">메인 페이지</a></li>
-        <li><a href="#" onclick="loadIframe('sub1.php')">서브 페이지 1</a></li>
-        <li><a href="#" onclick="loadIframe('company.php')">회사 페이지</a></li>
+        <li><a href="#" onclick="loadIframe('map.php')">지도</a></li>
+        <li><a href="#" onclick="loadIframe('myPage.php')">마이페이지</a></li>
+        <li><a href="#" onclick="loadIframe('profile01.php')">프로필01</a></li>
+        <li><a href="#" onclick="loadIframe('profile02.php')">프로필02</a></li>
+        <li><a href="#" onclick="loadIframe('profile03.php')">프로필03</a></li>
+        <li><a href="#" onclick="loadIframe('splash.php')">스플래쉬</a></li>
+        <li><a href="#" onclick="loadIframe('storeDetail.php')">부동산소개</a></li>
     </ul></div>
-        <div>
+        <div style="width: 100%; height: 100%; ">
+        <iframe id="content" src="" width="100%" height="100%" style="border:1px solid black;"></iframe>
 
         </div>
-        <iframe id="content" src="" width="600" height="400" style="border:1px solid black;"></iframe>
-
+       
     </div>
     <script>
         function loadIframe(page) {
