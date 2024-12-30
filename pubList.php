@@ -10,24 +10,34 @@
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
   <link href="assets/css/swiper.css" rel="stylesheet" type="text/css" />
   <style>
+
   ul {
-    width: 200px;
+    width: 20%;
+    border-right: 1px solid black;
   }
 
   ul li {
     padding-top: 30px;
     height: 30px;
     text-align: center;
+    a {
+      font-size: 12px;
+      text-align:left; 
+    }
   }
 
   iframe {
-    border: 1px solid black;
+    
+  }
+
+  .sideMenu {
+    right: -120% !important;
   }
   </style>
 </head>
 
-<body>
-  <div class="flex">
+<body style="overflow-x: auto;width: 120%;border: 0px red solid;display: block;">
+  <div class="flex" style="width: 120%; height: 100%; overflow-X: auto; ">
     <ul>
       <li><a href="#" onclick="loadIframe('index.php')">메인 페이지</a></li>
       <li><a href="#" onclick="loadIframe('splash.php')">스플레시 페이지</a></li>
@@ -42,7 +52,7 @@
       <li><a href="#" onclick="loadIframe('profile03.php')">프로필3</a></li>
       <li><a href="#" onclick="loadIframe('storeDetailInput.php')">점포상세입력</a></li>
     </ul>
-    <iframe id="content" src="./index.php" width="390" height="844"></iframe>
+    <iframe id="content" src="./index.php" width="100%" height="100%"></iframe>
   </div>
   <script>
   function loadIframe(page) {
