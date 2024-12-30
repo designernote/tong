@@ -13,6 +13,12 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/swiper.css" rel="stylesheet" type="text/css" />
 
+    <style>
+li a {
+  font-size: 11px;
+}
+      </style>
+
   </head>
 
   <body>
