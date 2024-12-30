@@ -28,24 +28,27 @@ $(document).ready(function () {
 
 // 업종 셀랙트 //
 let selectFlag;
+
 $(".select_wrap").on("click", function (e) {
   e.preventDefault();
   $(this).toggleClass("selected");
+
   if ($(this).hasClass("selected")) {
-    $(".type_selectList").show();
+    $(this).find(".type_selectList").show();
   } else {
-    $(".type_selectList").hide();
+    $(this).find(".type_selectList").hide();
   }
-  $(".type_selectText").removeClass("placeholder");
+
+  $(this).find(".type_selectText").removeClass("placeholder");
 });
 
 $(".select_wrap").on("focusin", function () {
-  $(".type_selectList").show();
+  $(this).find(".type_selectList").show();
 });
 
 $(".select_wrap").on("focusout", function () {
   if (!selectFlag) {
-    $(".type_selectList").hide();
+    $(this).find(".type_selectList").hide();
   }
   $(this).removeClass("selected");
 });
@@ -61,6 +64,6 @@ $(".type_selectOption").on("mouseout", function () {
 $(".type_selectOption").on("click", function () {
   let value = $(this).attr("value");
 
-  $(".type_selectText").text($(this).text());
-  $(".type_selectList").hide();
+  $(this).closest(".select_wrap").find(".type_selectText").text($(this).text());
+  $(this).closest(".type_selectList").hide();
 });
