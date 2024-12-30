@@ -25,3 +25,42 @@ $(document).ready(function () {
     $(this).addClass("on");
   });
 });
+
+// 업종 셀랙트 //
+let selectFlag;
+$(".select_wrap").on("click", function (e) {
+  e.preventDefault();
+  $(this).toggleClass("selected");
+  if ($(this).hasClass("selected")) {
+    $(".type_selectList").show();
+  } else {
+    $(".type_selectList").hide();
+  }
+  $(".type_selectText").removeClass("placeholder");
+});
+
+$(".select_wrap").on("focusin", function () {
+  $(".type_selectList").show();
+});
+
+$(".select_wrap").on("focusout", function () {
+  if (!selectFlag) {
+    $(".type_selectList").hide();
+  }
+  $(this).removeClass("selected");
+});
+
+$(".type_selectOption").on("mouseenter", function () {
+  selectFlag = true;
+});
+
+$(".type_selectOption").on("mouseout", function () {
+  selectFlag = false;
+});
+
+$(".type_selectOption").on("click", function () {
+  let value = $(this).attr("value");
+
+  $(".type_selectText").text($(this).text());
+  $(".type_selectList").hide();
+});
