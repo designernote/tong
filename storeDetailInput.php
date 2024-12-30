@@ -14,7 +14,7 @@
 <body>
   <section class="wrap">
     <header class="header">
-      <h1 class="back"><a href="index.html">back</a></h1>
+      <h1 class="back"><a href="index.php">back</a></h1>
       <!-- <h2 class="page_title">부동산</h2> -->
       <a href="#" class="btn_option"></a>
     </header>
@@ -24,9 +24,17 @@
           <div class="store_detail">
             <form>
               <label for="type">업종</label>
-              <div class="input_wrap detail_input">
-                <input type="text" name="type" id="" placeholder="부동산">
+
+
+              <div class="select_wrap business_type" tabindex="0">
+                <p class="type_selectText placeholder">업종을 입력하세요</p>
+
+                <ul class="type_selectList" style="display:none;">
+                  <li value="selectOption1" class="type_selectOption">부동산</li>
+                  <li value="selectOption2" class="type_selectOption">인테리어</li>
+                </ul>
               </div>
+              
               <label for="type_name">업종명<span><em>5</em> / 30자</span></label>
               <div class="input_wrap detail_input">
                 <input type="text" name="type_name" id="" placeholder="금나와라 부동산">
@@ -36,10 +44,10 @@
                 <input type="text" name="introduce" id="" placeholder="010-000-0000">
               </div>
               <label for="introduce">한 줄 소개<span><em>3</em> / 100자</span></label>
-              <div class="detail_input">
+              <div class="textArea_wrap">
                 <textarea type="text" name="introduce" id="" placeholder="금나와라 부동산"></textarea>
               </div>
-              <div class="flex_right">
+              <div class="flex_right mt08">
                 <button class="button">AI 생성하기</button>
               </div>
             </form>
@@ -57,17 +65,22 @@
                 <input type="text" name="type_name" id="" placeholder="www.aaa.kr">
               </div>
               <label for="introduce">아파트단지명</label>
-              <div class="input_wrap detail_input">
-                <input type="text" name="introduce" id="" placeholder="강남퍼스트파크아파트">
+              <div class="select_wrap apt_name" tabindex="0">
+                <p class="type_selectText placeholder">아파트 단지명을 선택하세요</p>
+
+                <ul class="type_selectList" style="display:none;">
+                  <li value="selectOption1" class="type_selectOption">프르지오</li>
+                  <li value="selectOption2" class="type_selectOption">이편한세상</li>
+                </ul>
               </div>
             </form>
             <form>
               <label for="benefit1">혜택1</label>
-              <div class="input_wrap benefit_input">
+              <div class="input_wrap detail_input">
                 <input type="text" name="benefit1" id="" placeholder="10% 할인">
               </div>
               <label for="benefit2">혜택2</label>
-              <div class="input_wrap benefit_input">
+              <div class="input_wrap detail_input">
                 <input type="text" name="benefit2" id="" placeholder="10만원 상당의 사은품 증정">
               </div>
             </form>

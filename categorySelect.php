@@ -17,7 +17,7 @@
   <body>
     <section class="wrap">
       <header class="header">
-        <h1 class="back"><a href="index.html">back</a></h1>
+        <h1 class="back"><a href="index.php">back</a></h1>
         <h2 class="page_title">부동산</h2>
         <!-- <a href="#" class="btn_sideMenu">메뉴</a> -->
       </header>

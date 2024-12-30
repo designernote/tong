@@ -253,7 +253,6 @@
   font-weight: 600;
 }
 .title > span {
-  font-size: 1.4rem;
   font-weight: 600;
   color: var(--text-3);
 }
@@ -319,7 +318,6 @@
 .pointLocation > p {
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
   font-weight: 600;
   color: var(--black);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -424,7 +422,7 @@
   padding: 0 1.3rem;
   width: 340px;
   background: var(--white);
-  z-index: 99;
+  z-index: 1000;
 }
 .wrap .sideMenu.out {
   animation: slid_out forwards 1s;
@@ -480,7 +478,6 @@
   margin-top: 0.4rem;
 }
 .wrap .sideMenu .apt_select > li .inner_txt > li:nth-of-type(1) {
-  font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.8rem;
 }
@@ -504,7 +501,7 @@
   display: none;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 90;
+  z-index: 999;
 }
 .wrap main {
   padding: 4.8rem 0 8.4rem;
@@ -670,9 +667,6 @@
   display: flex;
   flex-direction: column;
 }
-.wrap main .container section.item_list .item .ranking_list > li > div .inner_txt > p {
-  font-size: 1.4rem;
-}
 .wrap main .container section.item_list .item .ranking_list > li > div .inner_txt > small {
   font-size: 1.2rem;
   color: var(--text-3);
@@ -685,7 +679,6 @@
   display: block;
   width: 3.8rem;
   height: 3.6rem;
-  font-size: 1.4rem;
   font-weight: 600;
   color: var(--white);
   text-align: center;
@@ -735,7 +728,6 @@
   background: url(../images/icon_rating.svg) no-repeat center/contain;
 }
 .wrap main .container section .detail_view .introduce {
-  font-size: 1.4rem;
   font-weight: 500;
 }
 .wrap main .container section .user_act {
@@ -751,7 +743,6 @@
   margin: 1.6rem 0;
   width: 33.3333%;
   height: 4.9rem;
-  font-size: 1.4rem;
   font-weight: 600;
   color: var(--text-2);
 }
@@ -776,7 +767,6 @@
 .wrap main .container section .place_info > ul li {
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
   font-weight: 600;
   line-height: 2.4rem;
 }
@@ -787,11 +777,13 @@
   height: 2.4rem;
   border: 1px solid red;
 }
-.wrap main .container section .place_info > ul li:nth-child(1) {
-  border: 1px solid blue;
-}
 .wrap main .container section .place_info > ul li:nth-child(1)::before {
   background: url(../images/icon_location.svg) no-repeat center/contain;
+}
+.wrap main .container section .place_info > ul li:nth-child(1) > div > small {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 .wrap main .container section .place_info > ul li:nth-child(2)::before {
   background: url(../images/icon_clock.svg) no-repeat center/contain;
@@ -829,7 +821,6 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 0.5rem;
-  font-size: 1.4rem;
   font-weight: 500;
   color: var(--text-2);
 }
@@ -839,9 +830,10 @@
 .wrap main .container section .store_detail .button {
   display: flex;
   align-items: center;
-  padding: 0 1.4rem;
+  padding: 0 1rem;
   width: initial;
   height: 2.9rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: var(--text-1);
   border: 1px solid var(--text-1);
@@ -874,7 +866,6 @@
   justify-content: center;
   padding: 0 0.8rem;
   width: initial;
-  font-size: 1.4rem;
   color: var(--white);
   line-height: 3.6rem;
   border-radius: 0.8rem;
@@ -1042,7 +1033,6 @@
   align-items: center;
   padding: 0.2rem 1.2rem 0;
   height: 3.6rem;
-  font-size: 1.4rem;
   font-weight: 600;
   color: var(--text-2);
   border: 1px solid var(--line);
@@ -1083,7 +1073,7 @@
   width: 100%;
   border-top: 1px solid var(--line);
   background: #fff;
-  z-index: 1;
+  z-index: 99;
 }
 .wrap footer .tab_menu {
   display: flex;
@@ -1122,12 +1112,35 @@
 }
 
 /* input */
+textarea,
 input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   border: none;
   background: transparent;
+}
+
+.textArea_wrap {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  height: 10rem;
+  border: 1px solid var(--line);
+  border-radius: 1.2rem;
+}
+.textArea_wrap > textarea {
+  width: 100%;
+}
+.textArea_wrap > textarea:focus {
+  border: none;
+  box-shadow: none;
+}
+.textArea_wrap > textarea::-moz-placeholder {
+  color: var(--text-4);
+}
+.textArea_wrap > textarea::placeholder {
+  color: var(--text-4);
 }
 
 .input_wrap {
@@ -1171,6 +1184,9 @@ input {
 }
 .input_wrap.benefit_input + label, .input_wrap.detail_input + label {
   margin-top: 1.6rem;
+}
+.input_wrap.detail_input {
+  font-size: 1.4rem;
 }
 .input_wrap.detail_input + label {
   margin-top: 1.4rem;
@@ -1260,4 +1276,66 @@ input {
     transform: translateX(0);
     opacity: 1;
   }
+}
+.select_wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  color: var(--text-1);
+  border: 1px solid var(--line);
+  border-radius: 1.2rem;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.select_wrap.selected .type_selectText::after {
+  content: "";
+  transform: rotate(180deg);
+}
+.select_wrap + label {
+  margin-top: 1.4rem;
+}
+
+.type_selectText {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+  color: var(--text-1);
+}
+.type_selectText::after {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../images/icon_select.svg) no-repeat center/contain;
+}
+.type_selectText.placeholder {
+  color: var(--text-3);
+  background-color: transparent;
+}
+
+.type_selectList {
+  position: absolute;
+  top: 4.2rem;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--line);
+  background-color: #ffffff;
+  z-index: 10;
+}
+.type_selectList .type_selectOption {
+  height: 4rem;
+  line-height: 4rem;
+  padding-left: 1.5rem;
+  cursor: pointer;
+}
+
+.type_selectOption:hover {
+  color: #ffffff;
+  background-color: var(--primary-Y);
 }/*# sourceMappingURL=style.css.map */

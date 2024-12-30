@@ -20,7 +20,7 @@
 
           <div class="map_search">
             <button class="back">
-              <a href="index.html">back</a></button>
+              <a href="index.php">back</a></button>
             <div class="input_wrap search">
               <input type="text" placeholder="" value="부동산" />
             </div>
