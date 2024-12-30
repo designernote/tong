@@ -25,7 +25,6 @@
             <form>
               <label for="type">업종</label>
 
-
               <div class="select_wrap business_type" tabindex="0">
                 <p class="type_selectText placeholder">업종을 입력하세요</p>
 
@@ -76,13 +75,27 @@
             </form>
             <form>
               <label for="benefit1">혜택1</label>
-              <div class="input_wrap detail_input">
-                <input type="text" name="benefit1" id="" placeholder="10% 할인">
+              <div class="btnAdd">
+                <div class="input_wrap detail_input">
+                  <input type="text" name="benefit1" id="" placeholder="10% 할인">
+                </div>
+                <div class="btnArea">
+                  <button class="plus">더하기</button>
+                  <button class="minus">빼기</button>
+                </div>
               </div>
+              
               <label for="benefit2">혜택2</label>
-              <div class="input_wrap detail_input">
-                <input type="text" name="benefit2" id="" placeholder="10만원 상당의 사은품 증정">
+              <div class="btnAdd">
+                <div class="input_wrap detail_input">
+                  <input type="text" name="benefit1" id="" placeholder="10만원 상당의 사은품 증정">
+                </div>
+                <div class="btnArea">
+                  <button class="plus">더하기</button>
+                  <button class="minus">빼기</button>
+                </div>
               </div>
+
             </form>
           </div>
           <button class="button">나의 점포 생성하기</button>

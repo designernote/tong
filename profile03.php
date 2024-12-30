@@ -41,7 +41,7 @@
             <div class="place_info">
               <ul>
                 <li>
-                  <div class="flex_column">
+                  <div>
                     <span>경기 성남시 분당구 판교역로 192번길 14-2 골드타워 2층 도원참치</span>
                     <small>판교역 1번 출구에서 325m</small>
                   </div>

@@ -39,14 +39,14 @@
 <body style="overflow-x: auto;width: 120%;border: 0px red solid;display: block;">
   <div class="flex" style="width: 120%; height: 100%; overflow-X: auto; ">
     <ul>
-      <li><a href="#" onclick="loadIframe('index.php')">메인 페이지</a></li>
-      <li><a href="#" onclick="loadIframe('splash.php')">스플레시 페이지</a></li>
-      <li><a href="#" onclick="loadIframe('categorySelect.php')">카테고리 선택시</a></li>
+      <li><a href="#" onclick="loadIframe('index.php')">메인</a></li>
+      <li><a href="#" onclick="loadIframe('splash.php')">스플레시</a></li>
+      <li><a href="#" onclick="loadIframe('categorySelect.php')">카테고리선택</a></li>
       <li><a href="#" onclick="loadIframe('storeDetail.php')">점포상세</a></li>
-      <li><a href="#" onclick="loadIframe('map.php')">지도-검색결과</a></li>
+      <li><a href="#" onclick="loadIframe('map.php')">지도검색결과</a></li>
       <li><a href="#" onclick="loadIframe('category.php')">카테고리</a></li>
       <li><a href="#" onclick="loadIframe('myPage.php')">마이페이지</a></li>
-      <li><a href="#" onclick="loadIframe('loginPage.php')">마이페이지 로그인</a></li>
+      <li><a href="#" onclick="loadIframe('loginPage.php')">로그인</a></li>
       <li><a href="#" onclick="loadIframe('profile01.php')">프로필1</a></li>
       <li><a href="#" onclick="loadIframe('profile02.php')">프로필2</a></li>
       <li><a href="#" onclick="loadIframe('profile03.php')">프로필3</a></li>
