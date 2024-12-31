@@ -67,3 +67,5 @@ $(".type_selectOption").on("click", function () {
   $(this).closest(".select_wrap").find(".type_selectText").text($(this).text());
   $(this).closest(".type_selectList").hide();
 });
+
+window.addEventListener("scroll", (e) => (e.enable = false));

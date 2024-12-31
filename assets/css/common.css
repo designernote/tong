@@ -100,12 +100,6 @@
   --mantine-color-placeholder: var(--Neutral-500, #b7b8b9) !important;
 }
 
-html {
-  overflow-y: auto;
-  overflow-x: auto;
-  width: 100%;
-}
-
 html,
 body {
   position: relative;
@@ -118,19 +112,16 @@ body {
   background-color: #fff;
   font-size: 1.4rem;
   letter-spacing: -0.6;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {
   -ms-overflow-style: none;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   display: none;
 }
-
-/* body {
-  overflow-x: hidden;
-} */
 
 /* body.modal-open {
   &::-webkit-scrollbar {

@@ -399,6 +399,7 @@ input {
   // flex: 1 1 auto;
   width: 100%;
   height: 100%;
+  overflow-y: auto;
 
   header {
     position: fixed;
@@ -618,7 +619,6 @@ input {
               > button {
                 padding: inherit;
                 padding-left: 6.5rem;
-                width: 20rem;
                 height: 4rem;
                 font-size: 1.8rem;
                 font-weight: 500;

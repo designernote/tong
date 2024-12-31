@@ -521,6 +521,7 @@ input {
   display: block;
   width: 100%;
   height: 100%;
+  overflow-y: auto;
 }
 .wrap header {
   position: fixed;
@@ -703,7 +704,6 @@ input {
 .wrap main .container.category_page > section .category > li > button {
   padding: inherit;
   padding-left: 6.5rem;
-  width: 20rem;
   height: 4rem;
   font-size: 1.8rem;
   font-weight: 500;
