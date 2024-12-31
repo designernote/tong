@@ -24,7 +24,7 @@ include 'include/header.php';
             <div class="carousel-item">
               <img src="./assets/images/img_visual.png" class="d-block w-100" alt="..." loading="lazy">
               <div class="carousel-caption banner_text">
-                <h5>꺽이 백화점 이문동</h5>
+                <h5>롯데백화점 서울</h5>
                 <p>입주자 대상 가전제품 20% 할인</p>
                 <span>행사기간 : 2024.02.02~05.01</span>
               </div>
@@ -32,7 +32,7 @@ include 'include/header.php';
             <div class="carousel-item">
               <img src="./assets/images/img_visual.png" class="d-block w-100" alt="..." loading="lazy">
               <div class="carousel-caption banner_text">
-                <h5>구라댕 백화점 공릉동</h5>
+                <h5>현대백화점</h5>
                 <p>입주자 대상 가전제품 20% 할인</p>
                 <span>행사기간 : 2024.02.02~05.01</span>
               </div>

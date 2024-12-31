@@ -68,4 +68,5 @@ $(".type_selectOption").on("click", function () {
   $(this).closest(".type_selectList").hide();
 });
 
+// ios 바운스 막기
 window.addEventListener("scroll", (e) => (e.enable = false));
