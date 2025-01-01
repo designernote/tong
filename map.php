@@ -17,7 +17,6 @@
     <main role="main">
       <div class="container map_page">
         <section>
-
           <div class="map_search">
             <button class="back">
               <a href="index.php">back</a></button>

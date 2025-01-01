@@ -414,11 +414,6 @@ input {
     background: var(--white);
     z-index: 10;
 
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-
     .logo {
       > a {
         display: block;
@@ -659,6 +654,11 @@ input {
       &.map_page {
         margin-top: -4.8rem;
         padding-bottom: 0;
+        overflow: hidden;
+
+        > section {
+          position: relative;
+        }
       }
 
       section {
@@ -1300,7 +1300,7 @@ input {
         .location_capsule {
           position: absolute;
           top: 5.6rem;
-          left: 0;
+          left: -1.6rem;
           right: 0;
           display: flex;
           white-space: nowrap;
@@ -1338,7 +1338,7 @@ input {
 
         .floating_btn {
           position: absolute;
-          bottom: 10rem;
+          bottom: 1.6rem;
           width: 4rem;
           height: 4rem;
           background: url(../images/icon_floating_btn.svg) no-repeat center /
@@ -1349,7 +1349,7 @@ input {
         .mapBG {
           white-space: nowrap;
           margin: 0 -1.6rem;
-          height: calc(100% - 56px - 83px);
+          height: calc(100% - 5.6rem - 5.6rem);
           background: url(../images/ex_img5.png) no-repeat center / cover;
         }
       }
@@ -1363,13 +1363,6 @@ input {
     border-top: 1px solid var(--line);
     background: #fff;
     z-index: 99;
-
-    padding-bottom: constant(safe-area-inset-bottom);
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
 
     .tab_menu {
       display: flex;
