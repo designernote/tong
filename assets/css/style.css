@@ -867,7 +867,10 @@ input {
   background: var(--primary-Y);
 }
 .wrap main .container section .detail_view .img_container {
+  display: flex;
+  justify-content: center;
   margin: 0 -1.6rem;
+  overflow: hidden;
 }
 .wrap main .container section .detail_view .img_container .thumb_img3 {
   width: 100%;

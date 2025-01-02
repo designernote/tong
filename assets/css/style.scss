@@ -834,7 +834,10 @@ input {
 
         .detail_view {
           .img_container {
+            display: flex;
+            justify-content: center;
             margin: 0 -1.6rem;
+            overflow: hidden;
 
             .thumb_img3 {
               width: 100%;
